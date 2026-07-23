@@ -1,0 +1,55 @@
+name: flutter_application_0
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.11.2+1
+  image_picker: ^1.2.0
+  tflite_flutter: ^0.12.1
+  image: ^4.5.4
+  flutter_tts:
+  google_mlkit_translation:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash:
+  
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/landmark_classifier.tflite
+    - assets/landmark_labels.txt
+    - assets/landmark_scaler_mean_std.json
+    - assets/images/final ASL.png
+    - assets/images/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
+  remove_alpha_ios: true
+
+
+flutter_native_splash:
+  color: "#FFFFFF"
+
+  android: true
+  ios: true
+
+  android_12:
+    color: "#FFFFFF"
+
+
